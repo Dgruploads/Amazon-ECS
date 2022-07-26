@@ -1,0 +1,18 @@
+{
+	"containerDefinitions": [
+		{
+			"memory": 128,
+			"portMappings": [
+				{
+					"hostPort": 80,
+					"containerPort": 80,
+					"protocol": "tcp"
+				}
+			],
+			"essential": true,
+			"name": "nginx_container",
+			"image": "nginx"
+		}
+	],
+	"family": "nginx_example"
+}
